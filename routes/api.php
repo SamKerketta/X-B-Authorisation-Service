@@ -473,6 +473,10 @@ Route::middleware(['apiPermission'])->group(function () {
         Route::post("property/get-holding-dues-of-property", "unAuthApis");
         Route::post('property/search-holding-direct', 'unAuthApis');
         Route::post('property/prop-payment-history-direct', 'unAuthApis');
+
+        #water 
+        Route::post("water/citizen/icici-payment", "unAuthApis");
+        // water/citizen/icici-payment
     });
 });
 
